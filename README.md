@@ -5,7 +5,7 @@ The pingu proyect born from two pingus
 - [Descripción](#descripción)
 - [Instalación](#instalación)
 - [Uso](#uso)
-- [Contribución](#cómo-contribuir)
+- [Tecnologías](#cómo-contribuir)
 - [Licencia](#licencia)
 
 ## Tecnologías
