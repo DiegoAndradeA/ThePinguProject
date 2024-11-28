@@ -1,5 +1,5 @@
-# The Pingu Proyect
-The pingu proyect born from two pingus
+# The Pingus Proyect
+PINGUS: Predictive Intelligent Network for Geotechnical and Unified Structures
 
 ## Tabla de Contenidos
 - [Descripción](#descripción)
