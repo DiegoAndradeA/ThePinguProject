@@ -1,35 +1,29 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/header';
 
-function App() {
-  const [count, setCount] = useState(0)
 
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div >
+      <Header />
 
-export default App
+      <div className="grid grid-cols-1 md:grid-cols-[10%_90%] mt-2 min-h-screen">
+      
+        <aside className="bg-sky-300 border border-gray-300 rounded-md p-4 shadow">
+          <h2 className="text-xl font-semibold">Sidebar</h2>
+          <p>Contenido del sidebar</p>
+        </aside>
+
+        <section className="bg-white border border-gray-300 rounded-md p-4 shadow">
+          <h2 className="text-xl font-semibold">Sección principal</h2>
+          <p>Contenido principal</p>
+        </section>
+      </div>
+    
+      <footer className="bg-blue-600 text-white text-center py-3 mt-2 rounded-md shadow">
+        © 2024 The Pingu Project. Todos los derechos reservados.
+      </footer>
+    </div>
+  );
+}
