@@ -18,6 +18,12 @@ export default function App() {
         <section className="bg-white border border-gray-300 rounded-md p-4 shadow">
           <h2 className="text-xl font-semibold">Sección principal</h2>
           <p>Contenido principal</p>
+          <button
+        className="bg-red-500 px-2 py-1 rounded-md mt-4 hover:bg-red-400"
+        onClick={() => alert("FEO!")}
+      >
+        Send
+      </button>
         </section>
       </div>
     
