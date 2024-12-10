@@ -1,33 +1,23 @@
-import { useState } from "react";
 import "./App.css";
+
+import { Route, Routes } from "react-router";
+
+import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
+import Home from "./components/Home.jsx";
+import PinguNotFound from "./components/PinguNotFound.jsx";
 
 export default function App() {
   return (
     <div>
       <Header />
 
-      <div className="grid grid-cols-1 md:grid-cols-[10%_90%] mt-2 min-h-screen">
-        <aside className="bg-sky-300 border border-gray-300 rounded-md p-4 shadow">
-          <h2 className="text-xl font-semibold">Sidebar</h2>
-          <p>Contenido del sidebar</p>
-        </aside>
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="*" element={<PinguNotFound />} />
+      </Routes>
 
-        <section className="bg-white border border-gray-300 rounded-md p-4 shadow">
-          <h2 className="text-xl font-semibold">Sección principal</h2>
-          <p>Contenido principal</p>
-          <button
-            className="bg-red-500 px-2 py-1 rounded-md mt-4 hover:bg-red-400"
-            onClick={() => alert("FEO!")}
-          >
-            Send
-          </button>
-        </section>
-      </div>
-
-      <footer className="bg-blue-600 text-white text-center py-3 mt-2 rounded-md shadow">
-        © 2024 The Pingu Project. Todos los derechos reservados.
-      </footer>
+      <Footer />
     </div>
   );
 }
