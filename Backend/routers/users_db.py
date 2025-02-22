@@ -21,6 +21,7 @@ async def user(id: int): #para que el programa siga funcionando
 
 #Query
 
+
 @router.get("/")  
 async def user(id: int): #para que el programa siga funcionando
     return "pe"
