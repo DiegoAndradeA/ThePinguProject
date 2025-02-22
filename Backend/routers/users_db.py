@@ -25,8 +25,6 @@ async def user(id: int): #para que el programa siga funcionando
 async def user(id: int): #para que el programa siga funcionando
     return "pe"
 
-print(User(id="1",username="diego",email="pepo"))
-
 
 @router.post("/", response_model= User,status_code=status.HTTP_201_CREATED) 
 async def user(user: User):
