@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // URL del dominio al que enviarás el JSON
-const url = 'http://127.0.0.1:8000/userdb';
+const url = 'https://thepinguproject.onrender.com/userdb';
 
 function Home() {
   // Estado para almacenar los valores del formulario y los usuarios
